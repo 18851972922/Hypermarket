@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="shortcut icon" href="favicon.jpg"/>
+	<link rel="stylesheet" href="./css/head-footer.css" />
+	<link rel="stylesheet" href="./css/iconfont.css">
+	<link rel="stylesheet" href="./iconfont/iconfont.css">
+	<link rel="stylesheet" href="./iconfont/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/homepage.css" type="text/css" media="all">
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+	
+ <script>
+    $(document).ready(function() {
+
+        function show( elt ) {
+            var index = $( elt ).index();
+			
+            // $( "#categorys .dd .item" ).removeClass( "a" ).find( "i" ).show();
+			$( elt ).addClass( "a" );
+            $( ".dorpdown-layer" ).show(); 
+            $( ".dorpdown-layer .item-sub" ).hide().eq( index ).show(); 
+        }
+		
+
+        function hide( elt ) {
+            $( ".dorpdown-layer" ).hide();
+			$( "#categorys .dd .item" ).removeClass( "a" );
+        }
+        
+
+        $( "#categorys .dd .item" ).mouseover( function() {
+			show(this);
+        } ).mouseout( function() {
+            });
+			
+        $( "#categorys" ).mouseover( function() {
+            $( ".dorpdown-layer" ).show();
+			 
+        } ).mouseout( function() {
+            hide(this);
+            } );
+   
+    });
+
+    </script>
+
+ 
+
+</head>
+
+
+<body style="zoom: 1;">
+    <div id="flex-nav">
+        <div>
+            <a href="#" class="iconfont icon-wode-"></a>
+            <a href="#">个人</a>
+        </div>
+        <div>
+            <a href="#" class="iconfont icon-kuaidi-"></a>
+            <a href="#">售后</a>
+        </div>
+        <div>
+            <a href="#" class="iconfont icon-kefu-"></a>
+            <a href="#">客服</a>
+        </div>
+        <div>
+            <a href="#" class="iconfont icon-gouwuche-"></a>
+            <a href="#">购物车</a>
+        </div>
+        <div>
+            <a href="#"></a>
+            <a href="#">回顶部</a>
+        </div>
+    </div>
+	
+	<div class="topbar">
+		<div class="container">
+			<div class="topbar-nav">
+				<a>您好，欢迎光临小米商城！</a><span>|</span>
+				<a href="" class="nav-title">我的订单</a><span>|</span>
+				<a href="" class="nav-title">收藏中心<i class="iconfont">&#xe79d;</i></a><span>|</span>
+				<a href="" class="nav-title">我的V+<i class="iconfont">&#xe7b2;</i></a><span>|</span>
+				<a href="" class="nav-title">网站导航<i class="iconfont">&#xe7b2;</i></a><span>|</span>
+				<a href="" class="nav-title">企业团购</a><span>|</span>
+				<a href="" class="nav-title">资质证照</a><span>|</span>
+				<a href="" class="nav-title">协议规则</a><span>|</span>
+				<a href="" class="nav-title">下载app</a>
+			</div>
+			<div class="topbar-cart"><a href=""><i class="iconfont">&#xe63f;</i>购物车<span>（0）</span></a></div>
+			<div class="topbar-info">
+				<a href="">登录</a><span>|</span>
+				<a href="">注册</a><span>|</span>
+				<a href="" class="sep">消息通知</a>
+				</div>
+		</div>
+	</div>
+	
+	<div class="header">
+		<div class="container">
+			<div class="header-logo">
+				<a href="#" class="lr">小米官网</a>
+			</div>
+			<div class="pic-log">
+				<ul class="pic-list">
+					<li class="pic-category"><i class="iconfont">&#xe63a;</i>正品保证</li>
+					<li class="pic-category"><i class="iconfont">&#xe67d;</i>七天无理由退换</li>
+					<li class="pic-category-end"><i class="iconfont">&#xe67e;</i>全场包邮</li>
+				</ul>
+			</div>
+			<div class="header-nav">
+				<ul class="nav-list">
+					<li class="nav-category">
+						<a href="">首页</a>
+					</li>
+					<li class="nav-item">
+						<a href="">男装</a>
+					</li>
+					<li class="nav-item">
+						<a href="">女装</a>
+					</li>
+					<li class="nav-item">
+						<a href="">运动户外</a>
+					</li>
+					<li class="nav-item">
+						<a href="">箱包</a>
+					</li>
+					<li class="nav-item">
+						<a href="">鞋靴</a>
+					</li>
+					<li class="nav-item">
+						<a href="">家纺</a>
+					</li>
+					<li class="nav-item">
+						<a href="">美妆</a>
+					</li>
+					<li class="nav-item">
+						<a href="">明星&潮牌</a>
+					</li>
+					<li class="nav-item">
+						<a href="">晒新货</a>
+					</li>
+					<li class="nav-item">
+						<a href="">限时抢</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header-search">
+				<form action="" class="search-form">
+					<input type="search" name="keyboard" class="search-text"/>
+					<input type="submit" value="&#xe651;" class="search-btn iconfont"/>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id="body">
+<div class="dorpdown" id="categorys" data-load="1">
+    <div class="dd">
+        <div class="dd-inner">
+            <div class="item fore1" clstag="keycount01a" data-index="1">
+                <h3><a href="" target="_blank">男装</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            <div class="item fore2 " clstag="keycount02a" data-index="2">
+                <h3><a href="" target="_blank">女装</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            <div class="item fore3" clstag="keycount03a" data-index="3">
+                <h3><a href="" target="_blank">运动</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            <div class="item fore4" clstag="keycount04a" data-index="4">
+                <h3><a href=" " target="_blank">鞋靴</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            <div class="item fore5" clstag="keycount05a" data-index="5">
+                <h3><a href="" target="_blank">箱包</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            <div class="item fore6" clstag="keycount06a" data-index="6">
+                <h3><a href="" target="_blank">家居</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            <div class="item fore7" clstag="keycount07a" data-index="7">
+                <h3><a href=" " target="_blank">美妆</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            <div class="item fore8" clstag="keycount08a" data-index="8">
+                <h3><a href="" target="_blank">母婴</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            <div class="item fore9" clstag="keycount09a" data-index="9">
+                <h3><a href=" " target="_blank">配饰</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            <div class="item fore10" clstag="keycount10a" data-index="10">
+                <h3><a href=" " target="_blank">家具数码</a></h3>
+                <i style="display: block;">&gt;</i>
+            </div>
+            </div>
+			
+        <div class="dorpdown-layer" style="display: block;">
+			
+            <div class="item-sub" id="category-item-1" style="display: none" data-id="a">
+                <div class="subitems" clstag="keycount01b">
+                    <dl class="fore1">
+                        <dt><a href=" " target="_blank">男装<i>&gt;</i></a></dt>
+                        <dd><a href=" " target="_blank">夹克</a><a href=" " target="_blank">衬衫</a><a href=" " target="_blank">长袖T</a><a href=" " target="_blank">卫衣</a><a href=" " target="_blank">针织衫</a><a href=" " target="_blank">卫衣</a><a href=" " target="_blank">牛仔裤</a><a href=" " target="_blank">休闲裤</a><a href=" " target="_blank">风衣</a><a href=" " target="_blank">西服</a><a href=" " target="_blank">羽绒服</a><a href=" " target="_blank">内裤</a></dd>
+                    </dl>
+					<img id="img1" src="img/homepage_title/img1.jpg"/>
+                </div>
+            </div>
+            <div class="item-sub" id="category-item-2" style="display: none;" data-id="b">
+                <div class="subitems" clstag="keycount502b">
+                    <dl class="fore1">
+                        <dt><a href="" target="_blank">女装<i>&gt;</i></a></dt>
+                        <dd><a href=" " target="_blank">POLO衫</a><a class="style-red" href=" " target="_blank">T恤</a><a href=" " target="_blank">半裙</a><a href=" " target="_blank">连衣裙</a><a href=" " target="_blank">七分裤</a><a class="style-red" href=" " target="_blank">九分裤</a><a href=" " target="_blank">短裤</a><a href=" " target="_blank">天使之城</a><a href=" " target="_blank">久拉拉</a><a href=" " target="_blank">蝶恋</a><a href=" " target="_blank">纳纹</a><a href=" " target="_blank">秋水伊人</a></dd>
+                    </dl>
+					<img id="img2" src="img/homepage_title/img2.jpg"/>
+                </div>
+            </div>
+            <div class="item-sub" id="category-item-3" style="display: none;" data-id="c">
+                <div class="subitems" clstag="keycount03b">
+                    <dl class="fore2">
+                        <dt><a href=" " target="_blank">运动<i>&gt;</i></a></dt>
+                        <dd><a href=" " target="_blank">T恤</a><a href=" " target="_blank">泳装</a><a href=" " target="_blank">板鞋</a><a href=" " target="_blank">训练鞋</a><a href=" " target="_blank">羽毛球用品</a><a href=" " target="_blank">手杖</a><a href=" " target="_blank">安踏</a><a href=" " target="_blank">李宁</a><a href=" " target="_blank">特步</a><a href=" " target="_blank">匹克</a><a href=" " target="_blank">德尔惠</a><a href=" " target="_blank">皮尔瑜伽</a></dd>
+                    </dl>
+					<img id="img2" src="img/homepage_title/img3.jpg"/>
+                </div>
+            </div>
+            <div class="item-sub" id="category-item-4" style="display: none;" data-id="d">
+                <div class="subitems" clstag="keycount04b">
+                    <dl class="fore3">
+                        <dt><a href=" " target="_blank">鞋靴<i>&gt;</i></a></dt>
+                        <dd><a href=" " target="_blank">单鞋</a><a href=" " target="_blank">凉鞋</a><a href=" " target="_blank">休闲皮鞋</a><a href=" " target="_blank">运动休闲</a><a href=" " target="_blank">商务皮鞋</a><a href=" " target="_blank">家居鞋</a><a href=" " target="_blank">骆驼</a><a href=" " target="_blank">涉趣</a><a href=" " target="_blank">欧伦堡</a><a href=" " target="_blank">卓诗尼</a><a href=" " target="_blank">人本</a><a href=" " target="_blank">如熙</a></dd>
+                    </dl>
+					<img id="img2" src="img/homepage_title/img4.jpg"/>
+                </div>
+            </div>
+            <div class="item-sub" id="category-item-5" style="display: none;" data-id="e">
+                <div class="subitems" clstag="keycount=05b">
+                    <dl class="fore4">
+                        <dt><a href="" target="_blank">箱包<i>&gt;</i></a></dt>
+                        <dd><a href="" target="_blank">单肩包</a><a href="" target="_blank">手提包</a><a href="" target="_blank">斜挎包</a><a href="" target="_blank">钱包</a><a href="" target="_blank">精品男包</a><a href="" target="_blank">腰包</a><a href="" target="_blank">电脑公文包</a><a href="" target="_blank">卡包</a><a href="" target="_blank">名片夹</a><a href="" target="_blank">迪士尼</a><a href="" target="_blank">朗歌</a><a href="" target="_blank">丹尼熊</a></dd>
+                    </dl>
+					<img id="img2" src="img/homepage_title/img5.jpg"/>
+                </div>
+            </div>
+            <div class="item-sub" id="category-item-6" style="display: none;" data-id="f">
+                <div class="subitems" clstag="=keycount06b">
+                    <dl class="fore1">
+                        <dt><a href=" " target="_blank">家居<i>&gt;</i></a></dt>
+                        <dd><a href=" " target="_blank">床品套件</a><a href=" " target="_blank">被子</a><a href=" " target="_blank">床垫</a><a href=" " target="_blank">绒毯</a><a href=" " target="_blank">抱枕</a><a href="" target="_blank">毛巾</a><a href="" target="_blank">凉席</a><a href="" target="_blank">蚊帐</a><a href="" target="_blank">收纳整理</a><a href="" target="_blank">雨具</a><a href="" target="_blank">餐具</a><a href="" target="_blank">保湿盒</a></dd>
+                    </dl>
+					<img id="img3" src="img/homepage_title/img6.jpg"/>
+                </div>
+            </div>
+            <div class="item-sub" id="category-item-7" style="display: none;" data-id="g">
+                <div class="subitems" clstag="keycount07b">
+                    <dl class="fore1">
+                        <dt><a href=" " target="_blank">美妆<i>&gt;</i></a></dt>
+                        <dd><a href=" " target="_blank">洁面</a><a href=" " target="_blank">化妆水</a><a href=" " target="_blank">面霜</a><a href=" " target="_blank">精华</a><a href=" " target="_blank">隔离</a><a href=" " target="_blank">眼影</a><a href=" " target="_blank">女靴</a><a href=" " target="_blank">沐浴露</a><a href=" " target="_blank">兰蔻</a><a href=" " target="_blank">兰芝</a><a href=" " target="_blank">欧莱雅</a><a href=" " target="_blank">雅芳</a><a href=" " target="_blank">美丽加芬</a></dd>
+                    </dl>
+					<img id="img2" src="img/homepage_title/img7.jpg"/>
+                </div>
+            </div>
+            <div class="item-sub" id="category-item-8" style="display: none;" data-id="h">
+                <div class="subitems" clstag="keycount201508b">
+                    <dl class="fore1">
+                        <dt><a href=" " target="_blank">母婴<i>&gt;</i></a></dt>
+                        <dd><a href=" " target="_blank">毛绒玩具</a><a href=" " target="_blank">益智学习</a><a href=" " target="_blank">婴童喂养</a><a href=" " target="_blank">纸尿裤</a><a href=" " target="_blank">寝具用品</a><a href=" " target="_blank">孕妈专区</a><a href=" " target="_blank">飘飘龙</a><a href=" " target="_blank">新安怡</a><a href=" " target="_blank">星辉</a><a href=" " target="_blank">新子装</a></dd>
+                    </dl>
+					<img id="img1" src="img/homepage_title/img8.jpg"/>
+                </div>
+            </div>
+            <div class="item-sub" id="category-item-9" style="display: none;" data-id="i">
+                <div class="subitems" clstag="keycount09b">
+                    <dl class="fore1">
+                        <dt><a href=" " target="_blank">配饰<i>&gt;</i></a></dt>
+                        <dd><a href=" " target="_blank">戒指</a><a href=" " target="_blank">耳饰</a><a href=" " target="_blank">手链</a><a href=" " target="_blank">手镯</a><a href=" " target="_blank">发饰</a><a href=" " target="_blank">项链</a><a href=" " target="_blank">钥匙链</a><a href=" " target="_blank">挂件</a><a href=" " target="_blank">套装</a><a href=" " target="_blank">手表</a><a href=" " target="_blank">帽子</a><a href=" " target="_blank">围巾</a></dd>
+                    </dl>
+					<img id="img1" src="img/homepage_title/img9.jpg"/>
+                </div>
+            </div>
+            <div class="item-sub" id="category-item-10" style="display: none;" data-id="j">
+                <div class="subitems" clstag="keycount10b">
+                    <dl class="fore1">
+                        <dt><a href=" " target="_blank">家电数码<i>&gt;</i></a></dt>
+                        <dd><a href=" " target="_blank">煮蛋器</a><a href="" target="_blank">酸奶机</a><a href=" " target="_blank">电饭煲</a><a href=" " target="_blank">豆浆机</a><a href=" " target="_blank">面包机</a><a href=" " target="_blank">电子壶</a><a href=" " target="_blank">电磁炉</a><a href=" " target="_blank">加湿净化</a><a href=" " target="_blank">剃须刀</a><a href=" " target="_blank">吹风机</a></dd>
+                    </dl>
+					<img id="img1" src="img/homepage_title/img10.jpg"/>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+
+
+    <div id="hot" class="container">
+        <div class="hot-infer">
+            <div><i class="iconfont icon-dayi"></i><a href="#">大衣</a></div>
+            <div><i class="iconfont icon-Txu"></i><a href="#">T恤</a></div>
+            <div><i class="iconfont icon-liantiaobao"></i><a href="#">包款</a></div>
+            <div><i class="iconfont icon-kouhong"></i><a href="#">彩妆</a></div>
+            <div><i class="iconfont icon-weijin"></i><a href="#">配饰</a></div>
+            <div><i class="iconfont icon-niuziku"></i><a href="#">长裤</a></div>
+        </div>
+        <div class="hot-pic"><a href="#"><img src="./img/img/homepage3.jpg"></a></div>
+        <div class="hot-pic"><a href="#"><img src="./img/img/homepage4.jpg" alt=""></a></div>
+        <div class="hot-pic"><a href="#"><img src="./img/img/homepage5.jpg" alt=""></a></div>
+    </div>
+
+	<div id="spring">
+		<p><a href=" ">春季必备</a></p>
+	</div>
+	
+    <div class="content">
+        <div style="z-index: 9" class="pic"><a href="">
+			<img class="img_hp" src="./img/homepage/1-1.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/1-2.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/1-3.jpg" alt=""></a></div>
+        <div style="z-index: 8" class="pic"><a href="">	    	
+			<img class="img_hp" src="./img/homepage/2-1.jpg" alt="">
+	    	<img class="img_hp" src="./img/homepage/2-2.jpg" alt="">
+	    	<img class="img_hp" src="./img/homepage/2-3.jpg" alt=""></a></div>
+        <div style="z-index: 7" class="pic"><a href="">			
+			<img class="img_hp" src="./img/homepage/3-1.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/3-2.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/3-3.jpg" alt=""></a></div>
+        <div style="z-index: 6" class="pic"><a href="">
+			<img class="img_hp" src="./img/homepage/4-1.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/4-2.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/4-3.jpg" alt=""></a></div>
+        <div style="z-index: 5" class="pic"><a href="">			
+			<img class="img_hp" src="./img/homepage/5-1.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/5-2.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/5-3.jpg" alt=""></a></div>
+        <div style="z-index: 4" class="pic"><a href="">		
+			<img class="img_hp" src="./img/homepage/6-1.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/6-2.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/6-3.jpg" alt=""></a></div>
+		<div style="z-index: 3" class="pic"><a href="">
+			<img class="img_hp" src="./img/homepage/7-1.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/7-2.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/7-3.jpg" alt=""></a></div>
+		<div style="z-index: 2" class="pic"><a href="">
+			<img class="img_hp" src="./img/homepage/8-1.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/8-2.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/8-3.jpg" alt=""></a></div>
+		<div style="z-index: 1" class="pic"><a href="">
+			<img class="img_hp" src="./img/homepage/9-1.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/9-2.jpg" alt="">
+			<img class="img_hp" src="./img/homepage/9-3.jpg" alt=""></a></div>
+        <div class="text">
+			<a href="#">购买造型精品</a>
+		</div>
+		<div class="circle">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+        </div>
+        <div class="btn">
+            <div>&lt;</div> 
+			<div>&gt;</div>
+        </div>
+    </div>
+			
+		<div class="children">
+			<div class="chnew"><a href="#">童装新品</a></div>
+			<div class="chclothes">
+			<div class="clo"><a  href="#">女童</a></div>
+			<div class="clo"><a  href="#">男童</a></div>
+			</div>
+		</div>
+		<div class="jewelry">
+			<div class="jery"><a href="#">型格「饰」界</a></div>
+			<div class="jerydiv">
+			<div class="jerybuy"><a  href="#">立即购买</a></div>
+			</div>
+		</div>
+		
+		<div class="recomend">
+			<div id="recomend_1">
+		    <dl class="recomend_list">
+		        <dt>精选推荐</dt>
+		    </dl>    
+		    <dl class="recomend_list1">
+				<dd><a class="re_a" href="" >女士</a></dd>
+				<dd><a class="re_a" href="">男士</a></dd>
+				<dd><a class="re_a" href="">儿童</a></dd>
+				<dd><a class="re_a" href="">为你精选</a></dd>
+				<dd><a class="re_a" href="">包款</a></dd>
+		    </dl><br />
+		    <dl class="recomend_list1">
+		        <dd><a class="re_a" href="" >佳节献礼</a></dd> 
+		    </dl>
+			</div>
+		</div>
+		</div>
+		<div class="footer-links">
+		    <dl class="col-links-item">
+		        <dt>帮助中心</dt>
+		        <dd><a class="follow" href="" >常见热点问题</a></dd>  
+		        <dd><a class="follow" href="" >联系我们</a></dd> 
+		        <dd><a class="follow" href="" >投诉与建议</a></dd>      
+		    </dl>    
+		    <dl class="col-links-item ">
+				<dt>售后服务</dt>
+				<dd><a class="follow" href="">退换货政策</a></dd>
+				<dd><a class="follow" href="" >自助服务</a></dd>       
+				<dd><a class="follow" href="" >相关下载</a></dd>
+		    </dl>   
+		    <dl class="col-links-item ">
+		        <dt>配送方式</dt>
+		        <dd><a class="follow" href="">配送范围</a></dd>
+		        <dd><a class="follow" href="" >配送时间</a></dd>       
+		        <dd><a class="follow" href="" >配送费收取标准</a></dd>         
+		    </dl>    
+		    <dl class="col-links-item ">
+		        <dt>如何付款/退款</dt>
+		        <dd><a class="follow" href="">支付方式</a></dd>
+		        <dd><a class="follow" href="" >如何办理退款</a></dd>       
+		        <dd><a class="follow" href="" >发票制度说明</a></dd>
+		    </dl>  
+		    <dl class="col-links-item ">
+		        <dt>新手指南</dt>
+		        <dd><a class="follow" href="">注册新用户</a></dd>
+		        <dd><a class="follow" href="" >网站订购流程</a></dd>       
+		        <dd><a class="follow" href="" >使用手册</a></dd>
+		    </dl>  
+		    <dl class="col-links-item  ">
+		        <dt>服务支持</dt>
+		        <dd><a class="follow" href="">售后政策</a></dd>
+		        <dd><a class="follow" href="" >自助服务</a></dd>       
+		        <dd><a class="follow" href="" >相关下载</a></dd>
+		    </dl>         
+		</div>
+		<div class="copyright">
+		  <ul>
+		    <li><a href="#">首页</a> &nbsp;&nbsp;&nbsp;| <a href="#">客户服务</a>&nbsp;&nbsp;&nbsp;|<a href="#">品牌合作</a> &nbsp;&nbsp;&nbsp;|<a href="#">网站联盟</a> &nbsp;&nbsp;&nbsp;|<a href="#">投诉与建议</a></li>
+		    <li>Copyright © 2011 vjia.com All Rights Reserved 京ICP备08000757号 京公网安备110105005926</li>
+		    <li><a href="#"><img src="img/head-footer/btm_logo_1.gif"  alt="网上交易保障中心" /></a> 
+			<a href="#"><img src="img/head-footer/btm_logo_2.gif"  alt="经营性网站备案信息" /></a></li>
+		  </ul>
+		</div>
+    <script>
+        var speed = 3000;
+        var content = document.getElementsByClassName("content")[0];
+        var pic = document.getElementsByClassName("pic");
+        var zindex = 0; //每张图片的层大小
+        var timer = null; //计时器
+        var index = 0;
+        var circle = document.getElementsByClassName("circle")[0].children;
+        var btn = document.getElementsByClassName("btn")[0].children;
+
+        function move1(res, count) {
+            for (var k = 0; k < count; k++) {
+                //获取层、改变层，赋值层
+                for (var i = 0; i < pic.length; i++) {
+                    zindex = parseInt(pic[i].style.zIndex);
+                    if (res == "right") {
+                        zindex++;
+                        //zindex=6->7->1 透明度为0,层变为1
+                        if (zindex > pic.length) {
+                            zindex = 1;
+                            pic[i].style.opacity = "0";
+                        }
+                        //zindex=5->6 透明度为1
+                        if (zindex == pic.length) {
+                            pic[i].style.opacity = "1"
+                            index = i;
+                        }
+                    } else {
+                        zindex--;
+                        //zindex=0->6 透明度为1，层变为6
+                        if (zindex == 0) {
+                            zindex = 9;
+                            pic[i].style.opacity = "1";
+                            index = i;
+                        }
+                        //zindex=6->5的透明度为0
+                        else if (zindex == pic.length - 1) {
+                            pic[i].style.opacity = "0";
+                        }
+                    }
+                    pic[i].style.zIndex = zindex;
+                    addColor();
+                }
+            }
+        }
+
+        function animate() {
+            timer = setInterval(function () {
+                move1("right", 1);
+            }, speed);
+        }
+
+        //小圆点  
+        //颜色变化
+        function addColor() {
+            for (var i = 0; i < circle.length; i++) {
+                if (index == i) {
+                    circle[i].className = "bgc";
+                } else {
+                    circle[i].className = "";
+                }
+            }
+        }
+
+
+        window.onload = function () {
+            animate();
+            addColor();
+            //鼠标进入与离开
+            content.onmouseenter = function () {
+                clearInterval(timer);
+            }
+            content.onmouseleave = function () {
+                animate();
+            }
+
+            //鼠标触碰小圆点
+            for (var i = 0; i < circle.length; i++) {
+                circle[i].index = i;
+                circle[i].onmouseenter = function () {
+                    count = this.index - index > 0 ? this.index - index : circle.length + (this.index - index);
+                    move("right", count);
+                    index = this.index;
+                    addColor();
+                }
+            }
+
+            //btn事件  右边的箭头向右
+            btn[0].onclick = function () {
+                move1("left", 1);
+            }
+            btn[1].onclick = function () {
+                move1("right", 1);
+            }
+        }
+    </script>
+	
+
+</body></html>
